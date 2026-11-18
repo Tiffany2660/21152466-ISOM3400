@@ -14,4 +14,4 @@ symbols = ["AAPL", "IBM", "MSFT", "AMZN"]
 
 prices_2005 = stocks.query(f"date < {year+1} and date >= {year} and symbol in {symbols}")
 
-st.line_chart = (prices_2005, x="date",y="price")
+st.line_chart = (prices_2005, x="date",y="price",color="symbol")
